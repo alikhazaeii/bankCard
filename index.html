@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bankCard</title>
+  <link rel="stylesheet" href="asset/input.css">
+</head>
+
+<body>
+  <div class="card">
+    <img src="asset/img/image (30).png" alt="">
+    <img src="asset/img/mastercard-visa-credit-card-discover-payment.jpg" alt="">
+    <div class="cardnumber">
+      **** **** **** ****
+    </div>
+    <div class="cardholder">
+      <p>card Holder</p>
+      <h2>Full Name</h2>
+    </div>
+    <div class="date">
+      <p>expire</p>
+      <h3 class="month">MM</h3>
+      <strong>/</strong>
+      <h3 class="year">YY</h3>
+    </div>
+    <div class="backcard">
+      <div class="nav"></div>
+      <p>cvv</p>
+      <h2 class="putcv"></h2>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="userholder">
+      <label for="">Card Number</label>
+      <input type="number" id="cardnumber" oninput="cardnumber()">
+      <label for="">Card Holder</label>
+      <input type="text" oninput="fullname()" id="fullname">
+
+    </div>
+    <div class="ex">
+      <div class="expiration">
+        <label for="">expiration date</label>
+        <select id="Month" class="form-select" onchange="month()">
+          <option value="" disabled selected> Month</option>
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <select id="year" class="form-select" onchange="year()">
+          <option value="" disabled selected> year</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+          <option value="2034">2034</option>
+          <option value="2035">2035</option>
+          <option value="2036">2036</option>
+        </select>
+      </div>
+      <div class="cvv">
+        <label for="">cvv</label>
+        <input type="number" id="cvvInput">
+      </div>
+    </div>
+    <button>Submmit</button>
+  </div>
+</body>
+<script src="asset/script.js">
+  
+
+</script>
+
+</html>
