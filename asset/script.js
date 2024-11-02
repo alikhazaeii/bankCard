@@ -7,7 +7,7 @@ function cardnumber() {
     CardNumber = CardNumber.slice(0, 16);
   }
   const formattedCardNumber = CardNumber.replace(/\s+/g, '').replace(/(\d{4})(?=\d)/g, '$1 ');
-  BankCardNumber.textContent = formattedCardNumber || "#### #### #### ####";
+  BankCardNumber.textContent = formattedCardNumber || "**** **** **** ****";
 }
 
 function fullname() {
